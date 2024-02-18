@@ -12,7 +12,7 @@ class Index extends BaseController
         $user = 1;
         $token = uniqid();
         $tokens = "1".$token;
-
+        
         session($user."token",$tokens);
         $respone = [
             "code" => 0,
